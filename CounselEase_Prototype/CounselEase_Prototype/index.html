@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CounselEase | Login</title><link rel="stylesheet" href="styles.css"></head>
+<body class="auth-body" data-page="login">
+  <div class="auth-layout">
+    <section class="auth-visual" aria-label="Counselling support">
+      <div class="auth-visual-copy">
+        <p class="auth-kicker">COUNSELLING · CONNECTION · CARE</p>
+        <h2>Your Wellbeing Matters</h2>
+        <p>A welcoming space to access compassionate support and take your next step toward wellbeing.</p>
+        <div class="auth-visual-note"><span></span><span></span></div>
+      </div>
+    </section>
+    <main class="auth-panel">
+      <div class="auth-card">
+        <p class="eyebrow">COUNSELLING MANAGEMENT SYSTEM</p>
+        <h1>Welcome</h1><p class="muted">Sign in to continue to CounselEase.</p>
+        <form id="loginForm" class="form-stack" novalidate>
+          <label>Email address<input id="loginEmail" type="email" placeholder="you@example.com" required></label>
+          <label>Password<input id="loginPassword" type="password" placeholder="Enter your password" required></label>
+          <p id="loginError" class="error" aria-live="polite"></p>
+          <button class="btn primary full" type="submit">Log in</button>
+        </form>
+        <p class="auth-foot">New to CounselEase? <a href="register.html">Create an account</a></p>
+        <div class="demo-hint">Prototype demo: <b>admin@counsel.ease</b> / <b>Admin123!</b></div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body></html>

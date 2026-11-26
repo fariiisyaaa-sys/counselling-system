@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CounselEase Storyboard</title><link rel="stylesheet" href="styles.css"></head>
+<body class="app-body">
+<div class="main-area" style="margin-left:0"><header class="topbar"><div><p class="eyebrow">PROJECT STORYBOARD</p><h1>CounselEase – Counselling Management System</h1></div><a href="index.html">Open prototype →</a></header>
+<section class="content">
+<div class="welcome-panel"><div><p class="eyebrow light">SYSTEM OVERVIEW</p><h2>Storyboard & screen flow</h2><p>A simple web application for managing clients, appointments and counselling records.</p></div><div class="welcome-icon"></div></div>
+<div class="panel"><h3>Navigation flow</h3><p class="muted" style="margin:10px 0 15px">The email domain assigns the account role at registration. Clients see their own dashboard, profile and appointments; counsellors access assigned management modules.</p><div class="quick-grid"><div class="quick-action"><span>01</span><b>Login / Registration</b><small>Register with an automatically assigned account role</small></div><div class="quick-action"><span>02</span><b>Role-specific dashboard</b><small>Clients and counsellors see separate workspaces</small></div><div class="quick-action"><span>03</span><b>Management modules</b><small>Role-specific access to appointments and records</small></div></div></div>
+<div class="panel"><h3>Storyboard screens</h3><div class="table-wrap"><table><thead><tr><th>Screen</th><th>Page</th><th>Main components</th><th>Purpose</th><th>Open</th></tr></thead><tbody>
+<tr><td>01</td><td class="person-cell">Login</td><td>Email, password, login, register link</td><td>Access the system</td><td><a href="index.html">Open</a></td></tr>
+<tr><td>02</td><td class="person-cell">Registration</td><td>Name, email, password, confirm password</td><td>Create a user account with validation</td><td><a href="register.html">Open</a></td></tr>
+<tr><td>03</td><td class="person-cell">Counsellor dashboard</td><td>Assigned client and appointment counts, pending requests, upcoming sessions and recent activity</td><td>Show a counsellor's workspace overview</td><td><a href="dashboard.html">Open</a></td></tr>
+<tr><td>03a</td><td class="person-cell">Client dashboard</td><td>Own profile summary, appointment history and booking action</td><td>Show a client's private workspace</td><td><a href="client-dashboard.html">Open</a></td></tr>
+<tr><td>04</td><td class="person-cell">Client management</td><td>Client table, search, add, edit, delete</td><td>Perform CRUD on client information</td><td><a href="clients.html">Open</a></td></tr>
+<tr><td>05</td><td class="person-cell">Appointment management</td><td>Client, date, time, counsellor, status</td><td>Schedule and cancel appointments</td><td><a href="appointments.html">Open</a></td></tr>
+<tr><td>06</td><td class="person-cell">Session records</td><td>Client, date, summary, follow-up</td><td>Save and view session records</td><td><a href="records.html">Open</a></td></tr>
+<tr><td>07</td><td class="person-cell">Client feedback</td><td>Completed appointment, 1–5 star rating, comment, feedback history</td><td>Let clients submit feedback about their counsellors and view their own history</td><td><a href="feedback.html">Open</a></td></tr>
+<tr><td>08</td><td class="person-cell">Counsellor feedback</td><td>Feedback overview, client feedback filters, read-only client comments, editable feedback given</td><td>Let counsellors review client feedback and manage only their own entries</td><td><a href="counsellor-feedback.html">Open</a></td></tr>
+</tbody></table></div></div>
+<div class="panel"><h3>Mapping to lecturer's requirements</h3><div class="table-wrap"><table><thead><tr><th>Requirement</th><th>Prototype implementation</th><th>Java MVC implementation later</th></tr></thead><tbody>
+<tr><td>Login / Logout</td><td>Login form and logout action</td><td>Servlet + HttpSession</td></tr><tr><td>Registration with validation</td><td>Required fields, email and password checks</td><td>Registration Servlet + server-side validation</td></tr><tr><td>Information management (CRUD)</td><td>Client create, read, update and delete</td><td>Servlet + JavaBean + DAO/database</td></tr><tr><td>Dashboard</td><td>Statistics and recent appointments</td><td>Servlet retrieves database summary; JSP displays it</td></tr><tr><td>Additional feature 1</td><td>Appointment scheduling</td><td>Appointment Servlet + JavaBean + database</td></tr><tr><td>Additional feature 2</td><td>Session records</td><td>SessionRecord Servlet + JavaBean + database</td></tr>
+</tbody></table></div></div>
+<p class="muted">Note: This storyboard is a front-end demonstration only. The final assignment implementation must use Java MVC, JSP, Servlets, JavaBeans and persistent database storage as specified by the lecturer.</p>
+</section></div></body></html>
